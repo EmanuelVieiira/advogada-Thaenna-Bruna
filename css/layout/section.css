@@ -1,0 +1,78 @@
+.full-banner {
+  background-image: url('/img/justiça\ .png'); /* Removi o espaço e a barra invertida */
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;         /*fixa a imagem */
+  background-repeat: no-repeat;
+
+  width: 99vw;
+  min-height: 100vh; /* Garante altura mínima de tela cheia */
+  margin: 0;
+  padding: 60px 0; /* Espaço interno para os cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-round {
+  height: 30vh;
+
+  padding: 1rem;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  color: white; /* deixa os textos em branco */
+}
+
+.card-title {
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 20%;
+  height: 2px;
+  background-color: #8B1E3F; /* mesma cor do título */
+}
+.card {
+  position: relative;
+  overflow: hidden; /* Esconde o que ultrapassa o card */
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/Mãos.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.card-link:hover .card-bg {
+  opacity: 0.3;
+}

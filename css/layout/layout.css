@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.content-wrapper {
+  margin-top: 80px; /* Empurra todo conteúdo para baixo */
+}
+.texto-limitado {
+  margin-top: 33px;
+  margin-left: 72px;
+}
+.main-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+.main-title,
+p {
+  max-width: 640px; /* Limita a largura do texto */
+  word-wrap: break-word; /* Garante quebra de palavras longas */
+  white-space: normal; /* Permite quebras de linha automáticas */
+}
+.container-lado-a-lado {
+  display: flex;
+  align-items: flex-start; /* Alinha topo do texto com topo da imagem */
+  gap: 220px; /* Espaço entre texto e imagem */
+  padding: 40px 72px;
+  flex-wrap: wrap; /* Permite quebrar em telas pequenas */
+}
+
+.texto-limitado {
+  max-width: 640px;
+}
+
+.shadow-pop-tr {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+.shadow-pop-tr {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 15s both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 15s both;
+}

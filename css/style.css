@@ -1,0 +1,16 @@
+
+/* Layout */
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./layout/layout.css');
+@import url('./layout/section.css');
+
+/* Components */
+@import url('./carousel.css');
+/*@import url('./components/modal.css');*/
+
+/* Animations */
+@import url('./animations.css');
+
+/* Themes 
+@import url('./themes/dark-mode.css');*/

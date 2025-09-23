@@ -1,0 +1,65 @@
+header {
+  background-color: #3A0E1A;
+  color: #e2bcaa;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; 
+  width: 100%;     
+  top: 0;           
+  z-index: 1000;    /* Fica por cima de outros elementos */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.logo .icon {
+  font-size: 28px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  position: relative;        /* ← Chave para funcionar */
+  padding: 5px 0;
+}
+
+nav a::after {
+  content: '';               /* ← Cria elemento vazio */
+  position: absolute;        /* ← Posiciona em relação ao pai */
+  width: 0;                  /* ← Começa invisível */
+  height: 2px;               /* ← Grossura do traço */
+  bottom: 0;                 /* ← Na parte de baixo */
+  left: 0;                   /* ← Começa da esquerda */
+  background-color: #e2bcaa; /* ← Cor do traço */
+  transition: width 0.3s ease; /* ← Animação suave */
+}
+
+nav a:hover::after {
+  width: 100%;               /* ← No hover, cresce 100% */
+}
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  margin-right: 100px; /* Empurra o nav para a direita */
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e2bcaa;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
