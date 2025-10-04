@@ -52,7 +52,6 @@ Desenvolvido por uma equipe de 3 estudantes dedicados:
 ---
 
 ## 📁 Estrutura do Projeto
-## Estrutura do Projeto
 
 ```plaintext
 TB/
@@ -84,7 +83,7 @@ TB/
 
 **Passos:**
 
-1. Clone o repositório:
+Clone o repositório:
 
 ```bash
 git clone [url-do-repositorio]
