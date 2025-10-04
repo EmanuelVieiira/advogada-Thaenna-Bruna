@@ -1,0 +1,98 @@
+# ===========================
+# SISTEMA / TEMPORÁRIOS
+# ===========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# ===========================
+# LOGS
+# ===========================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================
+# COMPILAÇÃO (.NET / C#)
+# ===========================
+bin/
+obj/
+Debug/
+Release/
+out/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===========================
+# CONFIGURAÇÕES SENSÍVEIS
+# ===========================
+# ⚠️ NÃO SUBIR CONFIGURAÇÕES LOCAIS DE DESENVOLVIMENTO
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# ===========================
+# FRONTEND (HTML / CSS / JS)
+# ===========================
+node_modules/
+dist/
+build/
+
+# ===========================
+# BANCO DE DADOS
+# ===========================
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# ===========================
+# CACHE / PACOTES / OUTROS
+# ===========================
+*.nupkg
+*.snupkg
+*.pdb
+*.cache
+
+# ===========================
+# ONEDRIVE / TEMPORÁRIOS DO WINDOWS
+# ===========================
+~$*
+*.lnk
+
+# ===========================
+# WWWROOT
+# ===========================
+# Mantém os arquivos reais (CSS, JS e IMG),
+# mas ignora qualquer arquivo temporário gerado.
+wwwroot/**/*.tmp
+wwwroot/**/*.bak
+wwwroot/**/*.old
+
+# ===========================
+# IMAGENS / ARTE / FONTES BRUTAS
+# ===========================
+# Mantém imagens normais (png, jpg), mas ignora fontes editáveis (ex: PSD)
+*.psd
+*.ai
+*.xcf
+
+# ===========================
+# ARQUIVOS DE PROJETO / BACKUP
+# ===========================
+*.backup
+*.old
+*.zip
+*.rar
+*.7z
