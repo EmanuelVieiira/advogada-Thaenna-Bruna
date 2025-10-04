@@ -52,22 +52,26 @@ Desenvolvido por uma equipe de 3 estudantes dedicados:
 ---
 
 ## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
+```plaintext
 TB/
-├── 📁 Properties/                   # Propriedades do projeto
-├── 📁 wwwroot/                      # Arquivos estáticos públicos
-│   ├── 📁 css/                      # Folhas de estilo
-│   ├── 📁 img/                      # Imagens e recursos visuais
-│   └── 📁 js/                       # Scripts JavaScript
-├── 🌐 index.html                     # Página principal
-├── ⚙️ .gitignore                     # Arquivos ignorados pelo Git
-├── ⚙️ appsettings.json               # Configurações da aplicação
-├── ⚙️ appsettings.Development.json   # Configurações de desenvolvimento
-├── 💻 Program.cs                     # Ponto de entrada da aplicação
-├── 📄 TBI.csproj                     # Arquivo do projeto .NET
-└── 📄 TBI.sln                        # Solution do projeto
-
-
+├── Properties/                   # Configurações do projeto .NET
+├── wwwroot/                      # Arquivos públicos
+│   ├── css/
+│   │   └── style.css             # Estilos do site
+│   ├── js/
+│   │   ├── main.js               # Script principal
+│   │   └── animation.js          # Animações e interações
+│   └── img/                      # Imagens e recursos visuais
+├── index.html                    # Página principal
+├── .gitignore                    # Arquivos ignorados pelo Git
+├── appsettings.json              # Configurações de produção
+├── appsettings.Development.json  # Configurações de desenvolvimento
+├── Program.cs                    # Ponto de entrada da aplicação
+├── TBI.csproj                    # Arquivo do projeto .NET
+└── TBI.sln                       # Solution do Visual Studio
+````
 ---
 
 
