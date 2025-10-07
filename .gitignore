@@ -40,8 +40,6 @@ out/
 appsettings.Development.json
 appsettings.Local.json
 secrets.json
-appsettings.json
-
 
 # ===========================
 # FRONTEND (HTML / CSS / JS)
