@@ -6,12 +6,11 @@
 Um site moderno para apresentar os serviços da Dra. Thaenna Bruna e facilitar o contato com clientes.
 
 ---
-
 ## 🌐 Visualização Online
 
-🔗 **[Ver site ao vivo](#)**
+🔗 **[Ver site ao vivo](https://emanuelwebapp-adaxe5dwhxf0f5cv.brazilsouth-01.azurewebsites.net)**
 
-> O site está hospedado no Vercel com deploy automático a cada push na branch principal.
+> O site está hospedado no **Azure App Service**, com deploy automático via GitHub Actions a cada push na branch principal.
 
 ---
 
