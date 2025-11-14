@@ -1,0 +1,47 @@
+@page "/Blog"
+@model TB.Pages.Blog.IndexModel
+@{
+    Layout = "Shared/_Layout";
+    ViewData["Title"] = "Blog Jurídico";
+}
+<link rel="stylesheet" href="~/css/blog.css" />
+
+<section class="page-header">
+    <div class="container">
+        <h1>📰 Blog Jurídico</h1>
+        <p>Dicas, novidades e informações sobre o mundo do Direito</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="atualidades">Atualidades</button>
+        <button class="filter-btn" data-filter="dicas-praticas">Dicas Práticas</button>
+        <button class="filter-btn" data-filter="direito-de-familia">Direito de Família</button>
+    </div>
+
+    <div class="articles-grid">
+        @foreach (var artigo in Model.Artigos)
+        {
+            <article class="article-card" data-category="@artigo.Categoria.ToLower().Replace(" ", "-")">
+                <div class="article-image">
+                    <img src="@artigo.Imagem" alt="@artigo.Titulo" loading="lazy">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">@artigo.Categoria</span>
+                    <h3 class="article-title">
+                        <a href="/Blog/@artigo.Slug">@artigo.Titulo</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span>📅 @artigo.Data</span>
+                        <span>⏱️ @artigo.TempoLeitura</span>
+                    </div>
+                    <p class="article-excerpt">@artigo.Resumo</p>
+                    <a href="/Blog/@artigo.Slug" class="read-more">Continuar lendo →</a>
+                </div>
+            </article>
+        }
+    </div>
+</div>
+<script src="~/js/blogFilter.js"></script>

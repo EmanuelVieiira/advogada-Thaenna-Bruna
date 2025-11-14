@@ -1,0 +1,43 @@
+@page "/Blog/{slug}"
+@model TB.Pages.Blog.ArticleModel
+@{
+    Layout = "Shared/_Layout";
+    ViewData["Title"] = Model.Artigo?.Titulo ?? "Artigo";
+
+    if (Model.Artigo == null)
+    {
+        return;
+    }
+}
+<link rel="stylesheet" href="~/css/lendoBlog.css" />
+
+<div class="article-header">
+    <span class="article-tag-header">@Model.Artigo.Categoria</span>
+    <h1>@Model.Artigo.Titulo</h1>
+    <div class="article-meta-header">
+        <span>📅 @Model.Artigo.Data</span>
+        <span>⏱️ @Model.Artigo.TempoLeitura</span>
+    </div>
+</div>
+
+<div class="article-container">
+    <a href="/Blog" class="back-link">← Voltar para o blog</a>
+
+    <img src="@Model.Artigo.Imagem" alt="@Model.Artigo.Titulo" class="article-image-main">
+
+    <div class="article-content">
+        @Html.Raw(Model.Artigo.Conteudo)
+    </div>
+
+    <div class="share-section">
+        <h3>Gostou do artigo?</h3>
+        <p>Compartilhe com quem precisa saber!</p>
+    </div>
+
+    <div class="cta-box">
+        <h3>Precisa de ajuda jurídica?</h3>
+        <p>Entre em contato e tire suas dúvidas com nossa equipe especializada</p>
+        <a href="https://wa.me/556392167327?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20artigo%20'@Model.Artigo.Titulo'"
+            class="cta-button">Fale Conosco</a>
+    </div>
+</div>

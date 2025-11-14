@@ -1,0 +1,137 @@
+@page
+@model TB.IndexModel
+@{
+    Layout = "Shared/_Layout";
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direito Empresarial - Dra. Thaenna Bruna</title>
+    <meta name="description"
+        content="Direito Empresarial - Dra. Thaenna Bruna: Atendimento especializado em contratos comerciais, sociedades e disputas empresariais em São Paulo.">
+    <meta property="og:title" content="Direito Empresarial - Dra. Thaenna Bruna">
+    <meta property="og:description" content="Soluções jurídicas humanizadas para questões empresariais complexas.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <link rel="stylesheet" href="/css/areas/direitoEmpresarial.css">
+</head>
+
+<body>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Direito Empresarial</h1>
+            <p>Atuação especializada em questões empresariais com abordagem humanizada e soluções jurídicas
+                personalizadas.</p>
+        </div>
+    </section>
+
+    <main class="container service-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="service-section">
+                    <h2>Atuação em Direito Empresarial</h2>
+                    <p>O Direito Empresarial é uma área do direito que lida com as atividades comerciais, sociedades e
+                        contratos empresariais. Com mais de 15 anos de experiência, a Dra. Thaenna Bruna oferece
+                        atendimento especializado e humanizado para questões empresariais complexas.</p>
+
+                    <h3>Serviços Oferecidos</h3>
+                    <ul class="service-points">
+                        <li>Contratos comerciais e societários</li>
+                        <li>Constituição e dissolução de sociedades</li>
+                        <li>Fusões, aquisições e joint ventures</li>
+                        <li>Resolução de disputas empresariais</li>
+                        <li>Direito societário e governança corporativa</li>
+                        <li>Proteção de marcas e patentes</li>
+                        <li>Recuperação judicial e falências</li>
+                        <li>Compliance e ética empresarial</li>
+                        <li>Contratos de trabalho e relações trabalhistas</li>
+                    </ul>
+                </div>
+
+                <div class="service-section">
+                    <h2>Abordagem Humanizada</h2>
+                    <p>Entendemos que questões empresariais envolvem aspectos financeiros e estratégicos profundos.
+                        Nossa abordagem combina expertise jurídica com sensibilidade para oferecer soluções que protejam
+                        os interesses dos negócios e dos envolvidos.</p>
+
+
+                    <h2>Mediação Empresarial</h2>
+                    <p>Atuamos na mediação de conflitos empresariais, buscando soluções consensuais que evitem o
+                        desgaste financeiro e operacional do litígio judicial.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <h3>Agende uma Consulta</h3>
+                    <p>Entre em contato para discutir seu caso empresarial e encontrar a melhor solução para seu
+                        negócio.</p>
+                    <a href="#contact" class="btn btn-primary-custom mt-3">Entrar em Contato</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Documentação Necessária</h3>
+                    <ul class="service-points">
+                        <li>Documentos pessoais (RG, CPF)</li>
+                        <li>Contratos societários ou comerciais</li>
+                        <li>Documentos de constituição de empresa</li>
+                        <li>Relatórios financeiros</li>
+                        <li>Outros documentos específicos do caso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center main-title mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="fade-in">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" placeholder="Telefone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="area" class="form-label">Área de Interesse</label>
+                                <input type="area" id="area" class="form-control" placeholder="Direito Empresarial"
+                                    readonly="true">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Sua Mensagem</label>
+                            <textarea id="mensagem" class="form-control" rows="5" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

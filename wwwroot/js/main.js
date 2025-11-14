@@ -1,17 +1,28 @@
-// carrossel
+// ===== CARROSSEL =====
 document.addEventListener("DOMContentLoaded", function () {
   const myCarousel = document.getElementById("mainCarousel");
-  const carousel = new bootstrap.Carousel(myCarousel);
-  carousel._config.interval = 5000;
-  // Pausar ao passar o mouse
-  myCarousel.addEventListener("mouseenter", () => {
-    carousel.pause();
-  });
-  // Retomar quando o mouse sair
-  myCarousel.addEventListener("mouseleave", () => {
-    carousel.cycle();
-  });
+  
+  if (myCarousel) {
+    // Cria a instância do carrossel Bootstrap
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000, // Muda de slide a cada 5 segundos
+      wrap: true, // Volta para o primeiro slide após o último
+      touch: true // Suporta touch em mobile
+    });
+
+    // Pausar ao passar o mouse
+    myCarousel.addEventListener("mouseenter", () => {
+      carousel.pause();
+    });
+
+    // Retomar quando o mouse sair
+    myCarousel.addEventListener("mouseleave", () => {
+      carousel.cycle();
+    });
+  }
 });
+
+// ===== HEADER COM SCROLL =====
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   if (window.scrollY > 100) {
@@ -24,6 +35,8 @@ window.addEventListener("scroll", () => {
     header.style.backdropFilter = "";
   }
 });
+
+// ===== SCROLL SUAVE PARA ÂNCORAS =====
 document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -42,23 +55,28 @@ document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Efeito de clique na imagem
+// ===== EFEITO DE CLIQUE NA IMAGEM =====
 const img = document.querySelector(".shadow-pop-tr");
 
-img.addEventListener("click", () => {
-  img.classList.remove("shadow-pop-tr"); // remove se já tiver
-  void img.offsetWidth; 
-  img.classList.add("shadow-pop-tr"); 
-});
+if (img) {
+  img.addEventListener("click", () => {
+    img.classList.remove("shadow-pop-tr");
+    void img.offsetWidth; // Força o reflow
+    img.classList.add("shadow-pop-tr");
+  });
+}
 
-  document.querySelectorAll('.card-body').forEach(cardBody => {
-    const bg = cardBody.parentElement.querySelector('.card-bg');
+// ===== EFEITO HOVER NOS CARDS =====
+document.querySelectorAll('.card-body').forEach(cardBody => {
+  const bg = cardBody.parentElement.querySelector('.card-bg');
 
+  if (bg) {
     cardBody.addEventListener('mouseenter', () => {
-      bg.style.opacity = '0.9'; // ou o valor que quiser
+      bg.style.opacity = '0.9';
     });
 
     cardBody.addEventListener('mouseleave', () => {
       bg.style.opacity = '0';
     });
-  });
+  }
+});

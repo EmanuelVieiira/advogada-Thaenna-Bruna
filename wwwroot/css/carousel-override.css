@@ -1,7 +1,5 @@
-
 :root {
   --carousel-height: 70vh;
-  --carousel-caption-bg: rgba(0, 0, 0, 0.5);
 }
 
 /* Estilização do carrossel */
@@ -11,12 +9,12 @@
   background-size: cover;
 }
 
+
 /* Captions estilizadas */
 .carousel-caption {
-  background: var(--carousel-caption-bg);
   border-radius: 15px;
   padding: 2rem;
-  bottom: 30%;
+  bottom: 25%;
   width: 80%;
   left: 10%;
   cursor: pointer;
@@ -24,7 +22,14 @@
 }
 
 .carousel-caption:hover {
-  background: rgba(30, 4, 4, 0.7);
+  background: rgba(136, 104, 104, 0);
+}
+.carousel-caption p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+
 }
 
 /* Botões de controle */
@@ -35,6 +40,30 @@
   background-size: 100% 100%;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
+  outline: none !important;
+  border: none !important;
+}
+
+/* Remove outline e border dos botões */
+.carousel-control-prev,
+.carousel-control-next {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Indicadores personalizados */
@@ -45,6 +74,12 @@
   margin: 0 5px;
   border: 2px solid white;
   background-color: transparent;
+  outline: none !important;
+}
+
+.carousel-indicators button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .carousel-indicators button.active {
@@ -54,7 +89,7 @@
 /* Efeito hover nos controles */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color:transparent;
+  background-color: transparent;
 }
 
 /* Links clicáveis em toda a área */

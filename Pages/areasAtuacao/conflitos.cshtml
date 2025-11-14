@@ -1,0 +1,138 @@
+@page
+@model TB.IndexModel
+@{
+    Layout = "Shared/_Layout";
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediação de Conflitos - Dra. Thaenna Bruna</title>
+    <meta name="description"
+        content="Mediação de Conflitos - Dra. Thaenna Bruna: Atendimento especializado em mediação familiar, empresarial, trabalhista e comunitária em São Paulo.">
+    <meta property="og:title" content="Mediação de Conflitos - Dra. Thaenna Bruna">
+    <meta property="og:description"
+        content="Soluções pacíficas e humanizadas para resolução de conflitos através da mediação.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/areas/conflitos.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+</head>
+
+<body>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Mediação de Conflitos</h1>
+            <p>Atuação especializada em mediação de conflitos com abordagem humanizada e soluções pacíficas
+                personalizadas.</p>
+        </div>
+    </section>
+
+    <main class="container service-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="service-section">
+                    <h2>Atuação em Mediação de Conflitos</h2>
+                    <p>A Mediação de Conflitos é um método alternativo de resolução de disputas que busca soluções
+                        consensuais e pacíficas, evitando o litígio judicial. Com mais de 15 anos de experiência, a Dra.
+                        Thaenna Bruna oferece atendimento especializado e humanizado para mediação em diversas áreas.
+                    </p>
+
+                    <h3>Serviços Oferecidos</h3>
+                    <ul class="service-points">
+                        <li>Mediação familiar (divórcios, guarda de filhos)</li>
+                        <li>Mediação empresarial (conflitos societários)</li>
+                        <li>Mediação trabalhista (relações de trabalho)</li>
+                        <li>Mediação comunitária (vizinhanças, condomínios)</li>
+                        <li>Mediação imobiliária (disputas sobre imóveis)</li>
+                        <li>Mediação civil (contratos e obrigações)</li>
+                        <li>Mediação escolar (conflitos educacionais)</li>
+                        <li>Facilitação de negociações</li>
+                        <li>Acompanhamento pós-mediação</li>
+                    </ul>
+                </div>
+
+                <div class="service-section">
+                    <h2>Abordagem Humanizada</h2>
+                    <p>Entendemos que conflitos envolvem emoções e necessidades profundas. Nossa abordagem combina
+                        neutralidade, empatia e expertise para facilitar diálogos construtivos e alcançar acordos
+                        mutuamente satisfatórios.</p>
+
+
+                    <h2>Processo de Mediação</h2>
+                    <p>O processo de mediação é confidencial, voluntário e focado em soluções colaborativas, promovendo
+                        a preservação de relacionamentos e a redução de custos.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <h3>Agende uma Sessão</h3>
+                    <p>Entre em contato para discutir seu conflito e iniciar o processo de mediação para uma resolução
+                        pacífica.</p>
+                    <a href="#contact" class="btn btn-primary-custom mt-3">Entrar em Contato</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Documentação Necessária</h3>
+                    <ul class="service-points">
+                        <li>Documentos pessoais (RG, CPF)</li>
+                        <li>Acordo de mediação assinado</li>
+                        <li>Documentos relacionados ao conflito</li>
+                        <li>Relatos das partes envolvidas</li>
+                        <li>Outros documentos específicos do caso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center main-title mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="fade-in">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" placeholder="Telefone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="area" class="form-label">Área de Interesse</label>
+                                <input type="text" id="area" class="form-control" placeholder="Mediação de Conflitos"
+                                    readonly="true">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Sua Mensagem</label>
+                            <textarea id="mensagem" class="form-control" rows="5" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

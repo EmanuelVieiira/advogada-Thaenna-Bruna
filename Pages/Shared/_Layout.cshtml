@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Meu Site Jurídico</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="~/css/areas/sucessoes.css" />
+    <link rel="stylesheet" href="~/css/areas/direitoImobiliario.css" />
+    <link rel="stylesheet" href="~/css/layout/header.css" />
+    <link rel="stylesheet" href="~/css/layout/footer.css" />
+
+
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    @await Html.PartialAsync("_Header")
+    <!-- placeholder obrigatório no layout -->
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    @await Html.PartialAsync("_Footer")
+</body>
+
+</html>
+
+<!--_footer.cshtml é um arquivo parcial que contém o rodapé do site -->
+<!-- Ele é incluído no layout principal para manter a consistência em todas as páginas -->
+<!-- O RenderBody() é um espaço reservado onde o conteúdo específico de cada página será inserido -->
+<!-- layout.cshtml é o arquivo de layout principal que define a estrutura comum do site -->

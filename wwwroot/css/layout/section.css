@@ -1,23 +1,24 @@
 .full-banner {
-  background-image: url('/img/justiça\ .png'); /* Removi o espaço e a barra invertida */
+  background-image: url('/img/justiça\ .png'); 
   background-size: cover;
   background-position: top center;
-  background-attachment: fixed;         /*fixa a imagem */
+  background-attachment: fixed;         
   background-repeat: no-repeat;
 
   width: 99vw;
   min-height: 100vh; /* Garante altura mínima de tela cheia */
   margin: 0;
-  padding: 60px 0; /* Espaço interno para os cards */
+  padding: 60px 0; 
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
-
-.card-round {
-  height: 30vh;
-
-  padding: 1rem;
+#practice,
+#about,
+#process,
+#blog {
+  scroll-margin-top: 80px;
 }
 
 .card {

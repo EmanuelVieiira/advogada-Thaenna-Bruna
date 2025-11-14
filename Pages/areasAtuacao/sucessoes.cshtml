@@ -1,0 +1,135 @@
+@page
+@model TB.IndexModel
+@{
+    Layout = "Shared/_Layout";
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direito de Sucessões - Dra. Thaenna Bruna</title>
+    <meta name="description"
+        content="Direito de Sucessões - Dra. Thaenna Bruna: Atendimento especializado em inventários, partilhas de bens e heranças em São Paulo.">
+    <meta property="og:title" content="Direito de Sucessões - Dra. Thaenna Bruna">
+    <meta property="og:description" content="Soluções jurídicas humanizadas para questões de sucessões complexas.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/areas/sucessoes.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+</head>
+
+<body>
+    <section class="page-header">
+        <div class="container">
+            <h1>Direito de Sucessões</h1>
+            <p>Atuação especializada em questões de sucessões com abordagem humanizada e soluções jurídicas
+                personalizadas.</p>
+        </div>
+    </section>
+
+    <main class="container service-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="service-section">
+                    <h2>Atuação em Direito de Sucessões</h2>
+                    <p>O Direito de Sucessões é uma área do direito que trata da transmissão de bens e direitos após a
+                        morte. Com mais de 15 anos de experiência, a Dra. Thaenna Bruna oferece atendimento
+                        especializado e humanizado para questões de herança e sucessão.</p>
+
+                    <h3>Serviços Oferecidos</h3>
+                    <ul class="service-points">
+                        <li>Inventário judicial e extrajudicial</li>
+                        <li>Partilha de bens e direitos</li>
+                        <li>Testamentos e codicilos</li>
+                        <li>Doações e sucessão legítima</li>
+                        <li>Ações de sonegados e impugnação de testamento</li>
+                        <li>Arrolamento de bens</li>
+                        <li>Usucapião e questões de herança</li>
+                        <li>Planejamento sucessório</li>
+                        <li>Resolução de conflitos em sucessões</li>
+                    </ul>
+                </div>
+
+                <div class="service-section">
+                    <h2>Abordagem Humanizada</h2>
+                    <p>Entendemos que questões de sucessões envolvem aspectos emocionais profundos, como perda e divisão
+                        de patrimônio. Nossa abordagem combina expertise jurídica com sensibilidade para oferecer
+                        soluções que preservem relações familiares sempre que possível.</p>
+
+
+                    <h2>Mediação em Sucessões</h2>
+                    <p>Atuamos na mediação de conflitos relacionados a heranças, buscando soluções consensuais que
+                        evitem o desgaste emocional e financeiro do litígio judicial.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <h3>Agende uma Consulta</h3>
+                    <p>Entre em contato para discutir seu caso de sucessão e encontrar a melhor solução para sua
+                        herança.</p>
+                    <a href="#contact" class="btn btn-primary-custom mt-3">Entrar em Contato</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Documentação Necessária</h3>
+                    <ul class="service-points">
+                        <li>Documentos pessoais (RG, CPF)</li>
+                        <li>Certidão de óbito</li>
+                        <li>Comprovantes de bens e patrimônio</li>
+                        <li>Testamento ou escritura pública</li>
+                        <li>Outros documentos específicos do caso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center main-title mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="fade-in">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" placeholder="Telefone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="area" class="form-label">Área de Interesse</label>
+                                <input type="area" id="area" class="form-control" placeholder="Direito de Sucessões"
+                                    readonly="true">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Sua Mensagem</label>
+                            <textarea id="mensagem" class="form-control" rows="5" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

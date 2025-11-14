@@ -8,6 +8,13 @@ Thumbs.db
 *.swp
 *.swo
 *.orig
+~$*
+*.lnk
+
+# ===========================
+# HISTÓRICO DE VERSÕES
+.history/
+history/
 
 # ===========================
 # LOGS
@@ -23,26 +30,33 @@ yarn-error.log*
 # ===========================
 bin/
 obj/
-Debug/
-Release/
-out/
-.vs/
-.vscode/
-*.user
+*.dll
+*.exe
+*.pdb
+*.cache
 *.suo
-*.userosscache
+*.user
+.vs/
 *.sln.docstates
 
 # ===========================
 # CONFIGURAÇÕES SENSÍVEIS
 # ===========================
-# ⚠️ NÃO SUBIR CONFIGURAÇÕES LOCAIS DE DESENVOLVIMENTO
-appsettings.Development.json
-appsettings.Local.json
+appsettings.*.json
+!appsettings.json
 secrets.json
 
 # ===========================
-# FRONTEND (HTML / CSS / JS)
+# VISUAL STUDIO CODE
+# ===========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+*.code-workspace
+
+# ===========================
+# FRONTEND
 # ===========================
 node_modules/
 dist/
@@ -58,41 +72,34 @@ build/
 *.ldf
 
 # ===========================
-# CACHE / PACOTES / OUTROS
+# PACOTES / CACHE / BACKUP
 # ===========================
 *.nupkg
 *.snupkg
-*.pdb
-*.cache
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+*.backup
+*.old
 
 # ===========================
-# ONEDRIVE / TEMPORÁRIOS DO WINDOWS
+# WWWROOT TEMPORÁRIOS
 # ===========================
-~$*
-*.lnk
-
-# ===========================
-# WWWROOT
-# ===========================
-# Mantém os arquivos reais (CSS, JS e IMG),
-# mas ignora qualquer arquivo temporário gerado.
 wwwroot/**/*.tmp
 wwwroot/**/*.bak
 wwwroot/**/*.old
 
 # ===========================
-# IMAGENS / ARTE / FONTES BRUTAS
+# FONTES / ARTE BRUTA
 # ===========================
-# Mantém imagens normais (png, jpg), mas ignora fontes editáveis (ex: PSD)
 *.psd
 *.ai
 *.xcf
 
-# ===========================
-# ARQUIVOS DE PROJETO / BACKUP
-# ===========================
-*.backup
-*.old
-*.zip
-*.rar
-*.7z
+# Mantém fontes reais no repo (ttf/otf),
+# porque geralmente fazem parte do site
+# caso queira ignorá-las, descomente:
+# *.ttf
+# *.otf
