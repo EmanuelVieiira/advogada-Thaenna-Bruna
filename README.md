@@ -4,8 +4,7 @@
 
 ## 🌐 Demonstração
 
-> 🚧 O deploy ao vivo foi desativado (estava no Azure via conta de estudante). Em breve o projeto será hospedado novamente — enquanto isso, rode localmente com as instruções da seção "Como executar".
-
+> 🚧 O deploy ao vivo foi desativado (estava no Azure via conta de estudante). Em breve o projeto será hospedado novamente — enquanto isso, veja os prints abaixo ou rode localmente com as instruções da seção "Como executar".
 
 ## 🚀 Funcionalidades
 
@@ -61,8 +60,8 @@ TB/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/EmanuelVieiira/advogada-Thaenna-Bruna.git
-cd advogada-Thaenna-Bruna
+git clone https://github.com/EmanuelVieiira/AdvogadaThaennaBruna.git
+cd AdvogadaThaennaBruna
 
 # Restaure as dependências
 dotnet restore
